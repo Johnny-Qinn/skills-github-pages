@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>政策要点</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <style>
+         :root {
+            --primary-color: #0077be;
+            --secondary-color: #e6f3fa;
+            --text-color: #333;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        .nav {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        
+        .nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .nav ul li {
+            margin: 0 15px;
+        }
+        
+        .nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        .nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .banner {
+            background-color: var(--secondary-color);
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 80px;
+            padding-bottom: 40px;
+            text-align: center;
+            width: 100%;
+            height: 100px;
+            background-image: url('image/p.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .banner h1 {
+            color: var(--primary-color);
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        
+        .banner p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .grid-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s;
+            height: 200px;
+        }
+        
+        .grid-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .grid-item i {
+            font-size: 3em;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .grid-item h2 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+        }
+        /* Content Sections */
+        
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .content-box {
+            background-color: white;
+            width: 80%;
+            padding: 20px;
+            border-radius: 50px;
+            text-align: center;
+            margin: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-image: linear-gradient(white, dodgerblue)
+        }
+        /* Lower Section with Image and Table */
+        
+        .lower-section {
+            margin: 20px;
+        }
+        
+        .image-box {
+            background-color: white;
+            padding: 20px;
+            margin: 10px auto;
+            text-align: center;
+            border-radius: 8px;
+        }
+        
+        .table-box {
+            background-color: transparent;
+            padding: 0;
+        }
+        
+        table {
+            margin: 0 auto;
+            /* Centers the table */
+            border-collapse: collapse;
+            /* Collapses borders into single lines */
+            width: 80%;
+            /* Adjust the width as needed */
+        }
+        
+        th,
+        td {
+            border: 1px solid #333;
+            /* Thin border for table cells */
+            padding: 10px;
+            text-align: center;
+        }
+        
+        th {
+            background-color: #e9e9e9;
+        }
+        /* .image-box {
+            height: 150px;
+        } */
+        /* .table-box {
+            height: 100px;
+        } */
+        
+        p {
+            line-height: 26px;
+            text-indent: 36px;
+            text-align: justify;
+            text-justify: inter-word;
+            margin: 10px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">主页</a></li>
+            <li><a href="medicine.html">重点品种</a></li>
+            <li><a href="policy.html" style="color: deepskyblue;">政策要闻</a></li>
+            <li><a href="reference.html">参比制剂</a></li>
+        </ul>
+    </nav>
+    <div class="banner">
+        <h1>政策要点</h1>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <div class="content-box">
+            <h2 style="color: SlateBlue;">说明书适老化</h2>
+            <h3>1、广东省药品监督管理局办公室关于进一步做好药品说明书适老化及无障碍改革试点工作的通知——2024年7月1日发布</h3>
+            <p>鼓励持有人按相关规定在上市药品中提供大字版、简化版纸质说明书，完整版电子说明书，以及药品说明书、标签的语音播报服务、盲文信息等；省药品监管局将依托现有信息化建设平台，在省局公众网开辟适老化及无障碍版本药品说明书专栏，定期发布适老化及无障碍版本药品说明书电子版，方便公众准确、及时获取和使用等。</p>
+        </div>
+        <div class="content-box">
+            <h2 style="color: SlateBlue;">注册申报</h2>
+            <h3>1、关于试行以网络传输方式提交药品注册电子申报资料的通知——2024年7月1日发布</h3>
+            <p>自2024年7月1日起，启动药品注册电子申报资料网络传输试行工作，申请人可通过网络传输方式提交药品注册电子申报资料。</p>
+        </div>
+        <div class="content-box">
+            <h2 style="color: SlateBlue;">临床/临床急需</h2>
+            <h3>1、国家药监局部署创新药临床试验审评审批改革试点工作、国家药监局关于印发优化创新药临床试验审评审批试点工作方案的通知——2024年7月31日发布</h3>
+            <p>探索建立提升药物临床试验质量和效率的工作制度和机制，实现30个工作日内完成创新药临床试验申请的审评审批，推动试点区域缩短药物临床试验启动用时的目标。试点工作为期1年。2024年8月底前完成试点区域、试点机构确认，并启动试点项目申请；2025年1月开展中期评估；2025年7月总结试点工作经验。</p>
+        </div>
+        <div class="content-box">
+            <h2 style="color: SlateBlue;">委托生产</h2>
+            <h3>1、广东省药品监督管理局办公室发布《关于进一步加强广东省药品委托生产监督管理有关事项的通知》——2024年7月12日发布</h3>
+            <p>对B类（含B+D类）药品生产许可证的持有人（以下简称B证持有人）、受托生产企业的上市后监督管理工作提出了如下要求。</p>
+            <p>1、B证持有人：对人员要求、质量控制、检验管理、对委托生产的现场监督、建立沟通机制等方面提出了具体要求。</p>
+            <p>2、委托生产企业：除按相关法律法规和规章制度严格履行主体责任，以及本通知中建立沟通机制的要求外，受托生产企业还应重点关注以下几个方面内容：共线生产、变更管理、数据管理、停产复产。</p>
+        </div>
+    </div>
+
+    <!-- Lower Section with Image and Table -->
+    <div class="lower-section">
+        <div class="image-box">
+            <h4>3季度政策总体情况</h4>
+            <img src="image/p1.png" />
+        </div>
+        <h2>1、临床研究</h2>
+        <div class="table-box">
+            <table border="1">
+                <tr>
+                    <th>出台部门</th>
+                    <th>法规政策</th>
+                    <th>发布日期</th>
+                    <th>实施日期/征求意见日期</th>
+                </tr>
+                <tr>
+                    <td rowspan="3">国家局</td>
+                    <td><a href="https://www.nmpa.gov.cn/yaowen/ypjgyw/hyxx/yphyxx/20240731090348182.html" target="_blank">国家药监局部署创新药临床试验审评审批改革试点工作</a></td>
+                    <td>2024/7/31</td>
+                    <td>——</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.nmpa.gov.cn/xxgk/fgwj/gzwj/gzwjyp/20240731184417109.html" target="_blank">国家药监局关于印发优化创新药临床试验审评审批试点工作方案的通知</a></td>
+                    <td>2024/7/31</td>
+                    <td>——</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.nmpa.gov.cn/xxgk/fgwj/gzwj/gzwjyp/20240802085401168.html" target="_blank">国家药监局部署创新药临床试验审评审批改革试点工作</a></td>
+                    <td>2024/7/31</td>
+                    <td>——</td>
+                </tr>
+                <tr>
+                    <td rowspan="20">药审中心</td>
+                    <td><a href="https://www.cde.org.cn/main/news/viewInfoCommon/3b919afd8c3868a901bc47302104f074" target="_blank">国家药监局药审中心关于发布《胃食管反流病治疗药物临床试验技术指导原则》的通告（2024年第37号）</a></td>
+                    <td>2024/7/17</td>
+                    <td>2024/7/17</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.cde.org.cn/main/news/viewInfoCommon/df73ae8ee00c3d983d17c82025339226" target="_blank">国家药监局药审中心关于发布《地舒单抗注射液生物类似药（肿瘤适应症）临床试验指导原则（试行）》的通告（2024年第38号）</a></td>
+                    <td>2024/9/19</td>
+                    <td>2024/9/19</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.cde.org.cn/main/news/viewInfoCommon/7c4616b9b4cd7c10bb1b2f8e6a77634c" target="_blank">国家药监局药审中心关于发布《治疗慢性心力衰竭药物临床试验技术指导原则》的通告（2024年第39号）</a></td>
+                    <td>2024/9/19</td>
+                    <td>2024/9/19</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.cde.org.cn/main/news/viewInfoCommon/d4f9644f214286624ff999265f5f8f51" target="_blank">国家药监局药审中心关于发布《地屈孕酮片生物等效性研究技术指导原则》《复方甘草酸苷片生物等效性研究技术指导原则》2项技术指导原则的通告（2024年第40号）</a></td>
+                    <td>2024/9/25</td>
+                    <td>2024/9/25</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.cde.org.cn/main/news/viewInfoCommon/b2274bade973e9de33499bafdc2e3770" target="_blank"><i>关于公开征求《药物暴露-效应关系研究技术指导原则（征求意见稿）》意见的通知</i></a></td>
+                    <td>2024/7/9</td>
+                    <td><span style="color: red;">2024/8/9（已结束）</span></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.cde.org.cn/main/news/viewInfoCommon/b7019d162c0ca57de21ec3eb23e937e9" target="_blank"><i>关于公开征求《抗体类药物临床药理学研究技术指导原则（征求意见稿）》意见的通知</i></a></td>
+                    <td>2024/7/9</td>
+                    <td><span style="color: red;">2024/8/9（已结束）</span></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.cde.org.cn/main/news/viewInfoCommon/81ced90e5c342b8eb8bb41d5ded6065a" target="_blank"><i>关于公开征求ICH《M14：使用真实世界数据进行药品安全性评估的药物流行病学研究：规划和设计》指导原则草案意见的通知</i></a></td>
+                    <td>2024/7/12</td>
+                    <td><span style="color: red;">2024/10/12</span></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.cde.org.cn/main/news/viewInfoCommon/a93524c0e1c2a92f21a3f977867b3e39" target="_blank"><i>关于公开征求ICH《M12：药物相互作用》指导原则及问答文件实施建议和中文版意见的通知</i></a></td>
+                    <td>2024/7/17</td>
+                    <td><span style="color: red;">2024/8/17（已结束）</span></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.cde.org.cn/main/news/viewInfoCommon/efd1f4faac2a5cbecc147c2e98a76361" target="_blank"><i>关于公开征求《模型引导的创新药物剂量探索和优化技术指导原则（征求意见稿）》意见的通知</i></a></td>
+                    <td>2024/7/25</td>
+                    <td><span style="color: red;">2024/8/25（已结束）</span></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.cde.org.cn/main/news/viewInfoCommon/724c91dc92e74d209d4efb685062babb" target="_blank"><i>关于公开征求《嵌合抗原受体T细胞治疗淋巴血液系统恶性肿瘤临床试验技术指导原则（征求意见稿）》意见的通知</i></a></td>
+                    <td>2024/8/1</td>
+                    <td><span style="color: red;">2024/9/1（已结束）</span></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.cde.org.cn/main/news/viewInfoCommon/438ac4bfbedbd25cb8bdcd06f4918044" target="_blank"><i>关于公开征求《治疗子宫内膜癌新药临床研发技术指导原则（征求意见稿）》意见的通知</i></a></td>
+                    <td>2024/8/8</td>
+                    <td><span style="color: red;">2024/9/8（已结束）</span></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.cde.org.cn/main/news/viewInfoCommon/0d67eacd5ac71e0ef93a6da518fe32ce" target="_blank"><i>关于公开征求《抗HIV-1感染药物临床病毒学研究及数据递交指导原则（征求意见稿）》意见的通知</i></a></td>
+                    <td>2024/8/22</td>
+                    <td><span style="color: red;">2024/9/22（已结束）</span></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.cde.org.cn/main/news/viewInfoCommon/150d2edcfcf2b0a18f27ab6f9c3d7a5b" target="_blank"><i>关于公开征求《境外已上市境内未上市药品临床技术要求问与答（征求意见稿）》意见的通知</i></a></td>
+                    <td>2024/8/26</td>
+                    <td><span style="color: red;">2024/9/26（已结束）</span></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.cde.org.cn/main/news/viewInfoCommon/cc9e75f4016c88db4a858c7a138e2fdb" target="_blank"><i>关于公开征求ICH《E11A：儿科外推》指导原则实施建议和中文版意见的通知</i></a></td>
+                    <td>2024/8/26</td>
+                    <td><span style="color: red;">2024/9/26（已结束）</span></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.cde.org.cn/main/news/viewInfoCommon/f08989abca9bedfc9e56060ddd72d2f8" target="_blank"><i>关于公开征求《骨关节炎新药临床研发技术指导原则》意见的通知</i></a></td>
+                    <td>2024/8/28</td>
+                    <td><span style="color: red;">2024/9/28（已结束）</span></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.cde.org.cn/main/news/viewInfoCommon/1849eb63d5c89e76d30e7cb1f9e1711e" target="_blank"><i>关于公开征求《抗猴痘病毒药物临床试验技术指导原则（试行）》意见的通知</i></a></td>
+                    <td>2024/8/28</td>
+                    <td><span style="color: red;">2024/9/28（已结束）</span></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.cde.org.cn/main/news/viewInfoCommon/be91c769a8252e4ffa1b495162634134" target="_blank"><i>关于公开征求ICH《M13A: 口服固体速释制剂的生物等效性》（含问答文件）实施建议和中文版意见的通知</i></a></td>
+                    <td>2024/9/12</td>
+                    <td>2024/10/18</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.cde.org.cn/main/news/viewInfoCommon/623c63f7dc7362c52a5bcaf58201ac27" target="_blank"><i>关于公开征求《阿尔茨海默病治疗药物临床试验技术指导原则（征求意见稿）》意见的通知</i></a></td>
+                    <td>2024/9/27</td>
+                    <td>2024/10/27</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.cde.org.cn/main/news/viewInfoCommon/f21be615bd3383e9844cd8b740e723f0" target="_blank"><i>关于公开征求《存在未满足临床需求的严重细菌性疾病患者抗菌药物临床研发技术指导原则（征求意见稿）》意见的通知</i></a></td>
+                    <td>2024/9/27</td>
+                    <td>2024/10/27</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.cde.org.cn/main/news/viewInfoCommon/6f706018a609c844c1cb134822d72128" target="_blank"><i>关于公开征求《地拉罗司分散片生物等效性研究技术指导原则（征求意见稿）》等5个生物等效性指导原则意见的通知</i></a></td>
+                    <td>2024/9/29</td>
+                    <td>2024/10/29</td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>2、非临床</h2>
+        <div class="table-box">
+            <table border="1">
+                <tr>
+                    <th>出台部门</th>
+                    <th>法规政策</th>
+                    <th>发布日期</th>
+                    <th>实施日期/征求意见日期</th>
+                </tr>
+                <tr>
+                    <td>药审中心</td>
+                    <td><a href="https://www.cde.org.cn/main/news/viewInfoCommon/75b10b206f7e00e75854c3922905d88b" target="_blank"><i>关于公开征求《腺相关病毒载体基因治疗产品非临床研究技术指导原则（征求意见稿）》意见的通知</i></a></td>
+                    <td>2024/7/5</td>
+                    <td><span style="color: red;">2024/8/5（已结束）</span></td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>3、药学研究</h2>
+        <div class="table-box">
+            <table border="1">
+                <tr>
+                    <th>出台部门</th>
+                    <th>法规政策</th>
+                    <th>发布日期</th>
+                    <th>实施日期/征求意见日期</th>
+                </tr>
+                <tr>
+                    <td rowspan="8">药审中心</td>
+                    <td><a href="https://www.cde.org.cn/main/news/viewInfoCommon/be4028124f5503cb1459f8140dddb591" target="_blank">国家药监局药审中心关于发布《化学仿制药注射剂过量灌装研究技术指导原则》的通告（2024年第34号）</a></td>
+                    <td>2024/7/5</td>
+                    <td>2024/7/5</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.cde.org.cn/main/news/viewInfoCommon/2ae4d8b9cc009acc4096f5e7b61f652b" target="_blank">国家药监局药审中心关于发布《化学药品仿制药口服溶液剂药学研究技术指导原则》的通告（2024年第35号）</a></td>
+                    <td>2024/7/5</td>
+                    <td>2024/7/8</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.cde.org.cn/main/news/viewInfoCommon/eb36c3b46b08934b29aae38747cdd68c" target="_blank"><i>关于公开征求《局部起效化学仿制药体外释放（IVRT）与体外透皮（IVPT）研究技术指导原则（征求意见稿）》意见的通知</i></a></td>
+                    <td>2024/7/15</td>
+                    <td><span style="color: red;">2024/8/15（已结束）</span></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.cde.org.cn/main/news/viewInfoCommon/1291c6ec739a3fb8afdbc87582241424" target="_blank"><i>关于公开征求《化学仿制药口服制剂经肠内营养管给药体外对比研究技术指导原则（征求意见稿）》意见的通知</i></a></td>
+                    <td>2024/7/19</td>
+                    <td><span style="color: red;">2024/8/19（已结束）</span></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.cde.org.cn/main/news/viewInfoCommon/d2d425de57afa38a01b03dafb1e0ed00" target="_blank"><i>关于公开征求《发酵或半合成化学仿制药抗生素有关物质限度制定指导原则（征求意见稿）》意见的通知</i></a></td>
+                    <td>2024/7/24</td>
+                    <td><span style="color: red;">2024/8/24（已结束）</span></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.cde.org.cn/main/news/viewInfoCommon/a657de5ebe0a5a1c9ba216871355e169" target="_blank"><i>关于公开征求《化药口服固体制剂中间产品/待包装产品存放时限研究技术指导原则（征求意见稿）》意见的通知</i></a></td>
+                    <td>2024/7/24</td>
+                    <td><span style="color: red;">2024/8/24（已结束）</span></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.cde.org.cn/main/news/viewInfoCommon/a6928c08a0bd2ccb20c460cbdc0c764d" target="_blank"><i>关于公开征求《化学药品口溶膜剂药学研究技术指导原则（征求意见稿）》意见的通知</i></a></td>
+                    <td>2024/8/26</td>
+                    <td><span style="color: red;">2024/9/26（已结束）</span></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.cde.org.cn/main/news/viewInfoCommon/e4b98a4a5583d87c6195658264b183b8" target="_blank"><i>关于公开征求《重组糖蛋白激素类产品药学研究与评价技术指导原则（征求意见稿）》意见的通知</i></a></td>
+                    <td>2024/9/12</td>
+                    <td>2024/10/12</td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>4、注册申报</h2>
+        <div class="table-box">
+            <table border="1">
+                <tr>
+                    <th>出台部门</th>
+                    <th>法规政策</th>
+                    <th>发布日期</th>
+                    <th>实施日期/征求意见日期</th>
+                </tr>
+                <tr>
+                    <td rowspan="3">药审中心</td>
+                    <td><a href="https://www.cde.org.cn/main/news/viewInfoCommon/5cb8e4c325ebec432739bfd8346eec96" target="_blank">关于试行以网络传输方式提交药品注册电子申报资料的通知</a></td>
+                    <td>2024/7/1</td>
+                    <td>2024/7/1</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.cde.org.cn/main/news/viewInfoCommon/069a7f3a8025549cf68c314da63c12b5" target="_blank"><i>关于公开征求《已上市化药药品补充申请药学自评估报告（原料药/制剂）（征求意见稿）》意见的通知</i></a></td>
+                    <td>2024/7/26</td>
+                    <td><span style="color: red;">2024/8/26（已结束）</span></td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.cde.org.cn/main/news/viewInfoCommon/5ce4288f16acaf8b2e6d24ac14b2a8ce" target="_blank"><i>关于公开征求《生物类似药说明书撰写技术指导原则（征求意见稿）》意见的通知</i></a></td>
+                    <td>2024/9/29</td>
+                    <td>2024/10/29</td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>5、说明书适老化</h2>
+        <div class="table-box">
+            <table border="1">
+                <tr>
+                    <th>出台部门</th>
+                    <th>法规政策</th>
+                    <th>发布日期</th>
+                    <th>实施日期/征求意见日期</th>
+                </tr>
+                <tr>
+                    <td>广东省局</td>
+                    <td><a href="https://mpa.gd.gov.cn/zwgk/gzwj/content/post_4447603.html" target="_blank">广东省药品监督管理局办公室关于进一步做好药品说明书适老化及无障碍改革试点工作的通知</a></td>
+                    <td>2024/7/1</td>
+                    <td>2024/7/1</td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>6、技术指南</h2>
+        <div class="table-box">
+            <table border="1">
+                <tr>
+                    <th>出台部门</th>
+                    <th>法规政策</th>
+                    <th>发布日期</th>
+                    <th>实施日期/征求意见日期</th>
+                </tr>
+                <tr>
+                    <td>查验中心</td>
+                    <td><a href="https://www.cfdi.org.cn/resource/news/16001.html" target="_blank"><i>关于公开征求《清洁验证技术指南（征求意见稿）》意见的通知</i></a></td>
+                    <td>2024/7/4</td>
+                    <td><span style="color: red;">2024/7/18（已结束）</span></td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>7、委托生产</h2>
+        <div class="table-box">
+            <table border="1">
+                <tr>
+                    <th>出台部门</th>
+                    <th>法规政策</th>
+                    <th>发布日期</th>
+                    <th>实施日期/征求意见日期</th>
+                </tr>
+                <tr>
+                    <td>广东省局</td>
+                    <td><a href="https://mpa.gd.gov.cn/zwgk/gzwj/content/post_4454682.html" target="_blank">广东省药品监督管理局办公室发布《关于进一步加强广东省药品委托生产监督管理有关事项的通知》</a></td>
+                    <td>2024/7/12</td>
+                    <td>2024/7/12</td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>8、出口生产监管</h2>
+        <div class="table-box">
+            <table border="1">
+                <tr>
+                    <th>出台部门</th>
+                    <th>法规政策</th>
+                    <th>发布日期</th>
+                    <th>实施日期/征求意见日期</th>
+                </tr>
+                <tr>
+                    <td>国家局</td>
+                    <td><a href="https://www.nmpa.gov.cn/xxgk/zhqyj/zhqyjyp/20240806165918189.html" target="_blank"><i>国家药监局综合司公开征求《出口药品生产监督管理规定（征求意见稿）》意见</i></a></td>
+                    <td>2024/8/6</td>
+                    <td><span style="color: red;">2024/9/10（已结束）</span></td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>9、罕见病药物政策</h2>
+        <div class="table-box">
+            <table border="1">
+                <tr>
+                    <th>出台部门</th>
+                    <th>法规政策</th>
+                    <th>发布日期</th>
+                    <th>实施日期/征求意见日期</th>
+                </tr>
+                <tr>
+                    <td>药审中心</td>
+                    <td><a href="https://www.cde.org.cn/main/news/viewInfoCommon/244dc3661a418359aa12d7cba9bacf5d" target="_blank">国家药监局药审中心关于发布《以患者为中心的罕见疾病药物研发试点工作计划（“关爱计划”）》的通知（药审业〔2024〕500号）</a></td>
+                    <td>2024/9/13</td>
+                    <td>2024/9/13</td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>10、药物警戒</h2>
+        <div class="table-box">
+            <table border="1">
+                <tr>
+                    <th>出台部门</th>
+                    <th>法规政策</th>
+                    <th>发布日期</th>
+                    <th>实施日期/征求意见日期</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">评价中心/不良反应监测中心</td>
+                    <td><a href="https://www.cdr-adr.org.cn/tzgg_home/202409/t20240924_50855.html" target="_blank"><i>关于公开征求《药品上市后安全性评价指导原则（征求意见稿）》意见的通知</i></a></td>
+                    <td>2024/9/24</td>
+                    <td>2024/10/31</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.cdr-adr.org.cn/tzgg_home/202409/t20240924_50858.html" target="_blank"><i>关于公开征求《药品上市后安全性风险沟通指导原则（征求意见稿）》意见的通知</i></a></td>
+                    <td>2024/9/24</td>
+                    <td>2024/10/31</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="content">
+            <h3><a href="https://app.rwork.crc.com.cn/sheets/shtk9u4yoZvcOkVYBOVSXZHpSUe?sheet=SeHaDS" target="_blank">点击查看更多法规</a></h3>
+        </div>
+    </div>
+
+    <footer class="footer">
+        &copy; 2024 深圳华润九新药业有限公司. All rights reserved.
+    </footer>
+</body>
+
+</html>

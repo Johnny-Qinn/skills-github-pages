@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>药品注册资讯</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <style>
+         :root {
+            --primary-color: #0077be;
+            --secondary-color: #e6f3fa;
+            --text-color: #333;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        .nav {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px 0;
+        }
+        
+        .nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .nav ul li {
+            margin: 0 15px;
+        }
+        
+        .nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        .nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .banner {
+            background-color: var(--secondary-color);
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 120px;
+            padding-bottom: 40px;
+            text-align: center;
+            width: 100%;
+            height: 200px;
+            background-image: url('image/0.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .banner h1 {
+            color: var(--primary-color);
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        
+        .banner p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .grid-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s;
+            height: 200px;
+        }
+        
+        .grid-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .grid-item i {
+            font-size: 3em;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .grid-item h2 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">主页</a></li>
+            <li><a href="medicine.html">重点品种</a></li>
+            <li><a href="policy.html">政策要闻</a></li>
+            <li><a href="reference.html">参比制剂</a></li>
+        </ul>
+    </nav>
+    <div class="banner">
+        <h1>药品注册资讯</h1>
+        <p>华润九新第59期Q3药品注册资讯</p>
+    </div>
+    <a style="color: inheit; text-decoration: none" href="medicine.html">
+        <div class="grid-container">
+            <div class="grid-item">
+                <i class="fas fa-capsules"></i>
+                <h2>重点品种申报进展</h2>
+                <p>注射剂、口服制剂、原料药、生物制品</p>
+            </div>
+    </a>
+    <a style="color: inheit; text-decoration: none" href="policy.html">
+        <div class="grid-item">
+            <i class="fas fa-flask"></i>
+            <h2>政策法规要闻</h2>
+            <p>临床、非临床、注册申报、委托生产……</p>
+        </div>
+    </a>
+    <a style="color: inheit; text-decoration: none" href="reference.html">
+        <div class="grid-item">
+            <i class="fas fa-user-md"></i>
+            <h2>参比制剂</h2>
+            <p>正式公布1批<br/> 征求意见2批
+            </p>
+        </div>
+    </a>
+    <div class="grid-item">
+        <i class="fas fa-heartbeat"></i>
+        <h2>文件下载</h2>
+        <p>
+            <a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e" target="_blank">第59期2024Q3药品注册资讯.excel</a>
+        </p>
+    </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 深圳华润九新药业有限公司. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

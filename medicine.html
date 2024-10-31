@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>重点品种申报进展</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <style>
+         :root {
+            --primary-color: #0077be;
+            --secondary-color: #e6f3fa;
+            --text-color: #333;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        .nav {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        
+        .nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .nav ul li {
+            margin: 0 15px;
+        }
+        
+        .nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        .nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .banner {
+            background-color: var(--secondary-color);
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 80px;
+            padding-bottom: 40px;
+            text-align: center;
+            width: 100%;
+            height: 100px;
+            background-image: url('image/m.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        .banner h1 {
+            color: var(--primary-color);
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            /* text-shadow: 1px 1px white, 1px -1px white, -1px -1px white, -1px 1px white; */
+        }
+        
+        .banner p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .grid-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s;
+            height: 200px;
+        }
+        
+        .grid-item:hover {
+            transform: translateY(-5px);
+        }
+        
+        .grid-item i {
+            font-size: 3em;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .grid-item h2 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+        }
+        /* Content Sections */
+        
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        
+        .content-box {
+            background-color: white;
+            width: 48%;
+            padding: 20px;
+            border-radius: 50px;
+            text-align: center;
+            margin: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-image: linear-gradient(white, dodgerblue)
+        }
+        /* Lower Section with Image and Table */
+        
+        .lower-section {
+            margin: 20px;
+        }
+        
+        .image-box {
+            background-color: white;
+            padding: 20px;
+            margin: 10px auto;
+            text-align: center;
+            border-radius: 8px;
+        }
+        
+        .table-box {
+            background-color: transparent;
+            padding: 0;
+        }
+        
+        table {
+            margin: 0 auto;
+            /* Centers the table */
+            border-collapse: collapse;
+            /* Collapses borders into single lines */
+            width: 80%;
+            /* Adjust the width as needed */
+        }
+        
+        th,
+        td {
+            border: 1px solid #333;
+            /* Thin border for table cells */
+            padding: 10px;
+            text-align: center;
+        }
+        
+        th {
+            background-color: #e9e9e9;
+        }
+        /* .image-box {
+            height: 150px;
+        } */
+        /* .table-box {
+            height: 100px;
+        } */
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">主页</a></li>
+            <li><a href="medicine.html" style="color:deepskyblue;">重点品种</a></li>
+            <li><a href="policy.html">政策要闻</a></li>
+            <li><a href="reference.html">参比制剂</a></li>
+        </ul>
+    </nav>
+    <div class="banner">
+        <h1>重点品种申报进展</h1>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <div class="content-box">
+            <h2 style="color: #0077be;">注射剂</h2>
+            <P><b>注射用厄他培南</b><br> 新增 <u>2</u> 家过评，新增 <u>1</u> 家申报上市
+            </P>
+            <P><b>氟维司群注射液</b><br> 新增 <u>1</u> 家过评，新增 <u>1</u> 家申报上市
+            </P>
+            <P><b>注射用硫酸多粘菌素B</b><br>新增 <u>6</u> 家申报上市
+            </P>
+            <P><b>注射用头孢他啶阿维巴坦</b><br> 新增 <u>1</u> 家过评，新增 <u>3</u> 家申报上市
+            </P>
+            <P><b>注射用头孢唑肟钠</b><br> 新增 <u>12</u> 家过评，新增 <u>3</u> 家申报上市
+            </P>
+            <P><b>注射用盐酸万古霉素</b><br> 新增 <u>2</u> 家过评
+            </P>
+        </div>
+        <div class="content-box">
+            <h2 style="color: #0077be;">口服制剂</h2>
+            <P><b>氨酚羟考酮缓释片</b><br> 新增 <u>1</u> 家申报上市
+            </P>
+            <P><b>骨化三醇胶丸/软胶囊</b><br> 新增 <u>1</u> 家申报上市
+            </P>
+            <P><b>骨化三醇口服溶液</b><br>新增 <u>1</u> 家申报上市
+            </P>
+            <P><b>地氯雷他定口服溶液</b><br> 新增 <u>2</u> 家过评，新增 <u>5</u> 家申报上市
+            </P>
+            <P><b>小儿法罗培南颗粒</b><br> 新增 <u>3</u> 家申报上市
+            </P>
+        </div>
+    </div>
+
+    <!-- Lower Section with Image and Table -->
+    <div class="lower-section">
+        <h1>
+            一、注射剂
+        </h1>
+        <div class="image-box">
+            <img src="image/i1.png" />
+        </div>
+        <div class="table-box">
+            <table border="1">
+                <tr>
+                    <th>序号</th>
+                    <th>药品通用名称</th>
+                    <th>事业部研发/申报/批准情况</th>
+                    <th>预估上市排名</th>
+                    <th>老分类获批</th>
+                    <th>老分类通过一致性评价</th>
+                    <th>老分类申报一致性评价</th>
+                    <th>新分类获批</th>
+                    <th>新分类申报</th>
+                    <th>备注</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=1mKCgt" target="_blank">示踪用盐酸米托蒽醌注射液</a></td>
+                    <td>已获批</td>
+                    <td>——</td>
+                    <td>/</td>
+                    <td>/</td>
+                    <td>/</td>
+                    <td>1</td>
+                    <td>/</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=2kBxBd" target="_blank">注射用头孢比罗酯钠</a></td>
+                    <td>已申报（原研地产化），优先审评中</td>
+                    <td>2</td>
+                    <td>/</td>
+                    <td>/</td>
+                    <td>/</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=3rYYcS" target="_blank">注射用厄他培南</a></td>
+                    <td>代理进口品种，已提交发补</td>
+                    <td>6</td>
+                    <td>2（1原研）</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>3（<span style="color: red">+3</span>）</td>
+                    <td>8（<span style="color: red;">+1</span>）</td>
+                    <td>原研已进口</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=4pXmRg" target="_blank">氟维司群注射液</a></td>
+                    <td>代理进口品种，审评中</td>
+                    <td>11</td>
+                    <td>1（原研）</td>
+                    <td>/</td>
+                    <td>/</td>
+                    <td>9（<span style="color: red">+1</span>）</td>
+                    <td>3（<span style="color: red;">+1</span>）</td>
+                    <td>原研已进口</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">5</td>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=5sgzGJ" target="_blank">注射用头孢罗膦/罗膦酯/洛林/洛林酯/他诺林</a></td>
+                    <td rowspan="2">正在研发中</td>
+                    <td>——</td>
+                    <td>/</td>
+                    <td>/</td>
+                    <td>/</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=5sgzGJ" target="_blank">注射用头孢洛生他唑巴坦钠</a></td>
+                    <td>——</td>
+                    <td>/</td>
+                    <td>/</td>
+                    <td>/</td>
+                    <td>0</td>
+                    <td>1</td>
+                    <td>原研申报中</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">6</td>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=6nBZIA" target="_blank">注射用硫酸多粘菌素B</a></td>
+                    <td rowspan="2">正在研发中</td>
+                    <td>——</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>13（<span style="color: red;">+6</span>）</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=6nBZIA" target="_blank">注射用多粘菌素E甲磺酸钠</a></td>
+                    <td>——</td>
+                    <td>/</td>
+                    <td>/</td>
+                    <td>/</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=7hewak" target="_blank">注射用头孢他啶阿维巴坦</a></td>
+                    <td>已获批</td>
+                    <td>——</td>
+                    <td>1（原研）</td>
+                    <td>/</td>
+                    <td>/</td>
+                    <td>8（<span style="color: red">+1</span>）</td>
+                    <td>16（<span style="color: red;">+3</span>）</td>
+                    <td>原研已进口</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=9djrHs" target="_blank">布比卡因美洛昔康缓释溶液</a></td>
+                    <td>正在研发中</td>
+                    <td>——</td>
+                    <td>/</td>
+                    <td>/</td>
+                    <td>/</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=10ScRx" target="_blank">注射用头孢唑肟</a></td>
+                    <td>发布审评中</td>
+                    <td>31</td>
+                    <td>33</td>
+                    <td>8（<span style="color: red">+6</span>）</td>
+                    <td>19</td>
+                    <td>7（<span style="color: red">+7</span>）</td>
+                    <td>26（<span style="color: red">+3</span>）</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=11XDFl" target="_blank">注射用盐酸万古霉素</a></td>
+                    <td>审评中</td>
+                    <td>10</td>
+                    <td>4（1原研）</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>3（<span style="color: red">+2</span>）</td>
+                    <td>4</td>
+                    <td>原研已进口</td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>
+            二、口服制剂
+        </h2>
+        <div class="image-box">
+            <img src="image/i2.png" />
+        </div>
+        <div class="table-box">
+            <table border="1">
+                <tr>
+                    <th>序号</th>
+                    <th>药品通用名称</th>
+                    <th>事业部研发/申报/批准情况</th>
+                    <th>预估上市排名</th>
+                    <th>老分类获批</th>
+                    <th>老分类通过一致性评价</th>
+                    <th>老分类申报一致性评价</th>
+                    <th>新分类获批</th>
+                    <th>新分类申报</th>
+                    <th>备注</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">1</td>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=12ZOQK" target="_blank">氨酚羟考酮片</a></td>
+                    <td>已完成临床试验</td>
+                    <td>——</td>
+                    <td>1（原研）</td>
+                    <td>/</td>
+                    <td>/</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>原研已进口</td>
+                </tr>
+                <tr>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=12ZOQK" target="_blank">氨酚羟考酮缓释片</a></td>
+                    <td>/</td>
+                    <td>——</td>
+                    <td>/</td>
+                    <td>/</td>
+                    <td>/</td>
+                    <td>0</td>
+                    <td>1（<span style="color: red">+1</span>）</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">2</td>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=13RtXi" target="_blank">骨化三醇胶丸/软胶囊</a></td>
+                    <td>正在研发中</td>
+                    <td>——</td>
+                    <td>4（1原研）</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>5</td>
+                    <td>10（<span style="color: red;">+1</span>）</td>
+                    <td>原研已进口</td>
+                </tr>
+                <tr>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=13RtXi" target="_blank">骨化三醇口服溶液</a></td>
+                    <td>/</td>
+                    <td>——</td>
+                    <td>/</td>
+                    <td>/</td>
+                    <td>/</td>
+                    <td>2</td>
+                    <td>1（<span style="color: red;">+1</span>）</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">3</td>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=14JiWF" target="_blank">红霉素肠溶片</a></td>
+                    <td>/</td>
+                    <td>——</td>
+                    <td>398</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=14JiWF" target="_blank">红霉素肠溶胶囊</a></td>
+                    <td>正在研发中</td>
+                    <td>——</td>
+                    <td>10</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=15MKkZ" target="_blank">阿奇霉素片</a></td>
+                    <td>已获批</td>
+                    <td>——</td>
+                    <td>11</td>
+                    <td>11</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>原研已进口</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">5</td>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=17JdgL" target="_blank">头孢特仑新戊酯片</a></td>
+                    <td>正在研发中</td>
+                    <td>——</td>
+                    <td>6（1原研）</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>原研已进口</td>
+                </tr>
+                <tr>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=17JdgL" target="_blank">头孢特仑新戊酯胶囊</a></td>
+                    <td>/</td>
+                    <td>——</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=17JdgL" target="_blank">头孢特仑新戊酯干混悬剂</a></td>
+                    <td>/</td>
+                    <td>——</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=17JdgL" target="_blank">头孢特仑新戊酯颗粒</a></td>
+                    <td>正在研发中</td>
+                    <td>——</td>
+                    <td>/</td>
+                    <td>/</td>
+                    <td>/</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=18xYbG" target="_blank">富马酸喹硫平缓释片</a></td>
+                    <td>代理已批准</td>
+                    <td>——</td>
+                    <td>2（1原研）</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>9</td>
+                    <td>4</td>
+                    <td>原研已进口</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=23BPdi" target="_blank">左甲状腺素钠片</a></td>
+                    <td>代理进口品种，审评中</td>
+                    <td>6</td>
+                    <td>4（2原研）</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>2（1地产化）</td>
+                    <td>5</td>
+                    <td>原研2家，地产化1家</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=24KzpI" target="_blank">地氯雷他定口服溶液</a></td>
+                    <td>正在研发中</td>
+                    <td>——</td>
+                    <td>/</td>
+                    <td>/（<span style="color: red">+6</span>）</td>
+                    <td>/</td>
+                    <td>19（<span style="color: red">+2</span>）</td>
+                    <td>24（<span style="color: red">+5</span>）</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=25vsYt" target="_blank">小儿法罗培南颗粒</a></td>
+                    <td>正在研发中</td>
+                    <td>——</td>
+                    <td>1（原研）</td>
+                    <td>/</td>
+                    <td>/</td>
+                    <td>0</td>
+                    <td>5（<span style="color: red">+3</span>）</td>
+                    <td>原研已进口</td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>
+            三、原料药
+        </h2>
+        <div class="image-box">
+            <img src="image/i3.png" />
+        </div>
+        <div class="table-box">
+            <table border="1">
+                <tr>
+                    <th>序号</th>
+                    <th>药品通用名称</th>
+                    <th>沈阳三九研发/申报/批准情况</th>
+                    <th>已登记厂家</th>
+                    <th>状态为A</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=26YYNk" target="_blank">盐酸米托蒽醌</a></td>
+                    <td>/</td>
+                    <td>8</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=27BqUu" target="_blank">五水头孢唑林钠</a></td>
+                    <td>已通过关联审评</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=28ndvr" target="_blank">头孢比罗酯钠</a></td>
+                    <td>已登记</td>
+                    <td>1</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=29Swgx" target="_blank">厄他培南钠</a></td>
+                    <td>/</td>
+                    <td>4</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=30ikIF" target="_blank">氟维司群</a></td>
+                    <td>/</td>
+                    <td>9（<span style="color: red">-1</span>）</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=32asrb" target="_blank">头孢洛林酯</a></td>
+                    <td>/</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">7</td>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=33GkxV" target="_blank">硫酸多粘菌素B</a></td>
+                    <td>/</td>
+                    <td>9（<span style="color: red">+2</span>）</td>
+                    <td>4（<span style="color: red">+1</span>）</td>
+                </tr>
+                <tr>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=33GkxV" target="_blank">多粘菌素E甲磺酸钠</a></td>
+                    <td>/</td>
+                    <td>4</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">8</td>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=34gqig" target="_blank">头孢他啶</a></td>
+                    <td>/</td>
+                    <td>33</td>
+                    <td>31</td>
+                </tr>
+                <tr>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=34gqig" target="_blank">阿维巴坦</a></td>
+                    <td>/</td>
+                    <td>12（<span style="color: red">+1</span>）</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=35PRgF" target="_blank">头孢唑肟</a></td>
+                    <td>/</td>
+                    <td>21（<span style="color: red">+1</span>）</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=36IxCl" target="_blank">盐酸万古霉素</a></td>
+                    <td>/</td>
+                    <td>11</td>
+                    <td>6（<span style="color: red">+1</span>）</td>
+                </tr>
+            </table>
+        </div>
+        <h2>
+            四、生物制品
+        </h2>
+        <div class="image-box">
+            <img src="image/i4.png" />
+        </div>
+        <div class="table-box">
+            <table border="1">
+                <tr>
+                    <th>序号</th>
+                    <th>药品通用名称</th>
+                    <th>九新研发/申报/批准情况</th>
+                    <th>已批准</th>
+                    <th>正在申报</th>
+                    <th>备注</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=37qQOj" target="_blank">贝伐珠单抗注射液</a></td>
+                    <td>正在研发中</td>
+                    <td>11</td>
+                    <td>6（<span style="color: red">+1</span>）</td>
+                    <td>原研已进口</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=38aeSR" target="_blank">贝伐珠单抗注射液</a></td>
+                    <td>正在研发中</td>
+                    <td>6（<span style="color: red">+1</span>）</td>
+                    <td>0</td>
+                    <td>原研已进口</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=39Ntnb" target="_blank">利妥昔单抗注射液</a></td>
+                    <td>正在研发中</td>
+                    <td>5</td>
+                    <td>3（<span style="color: red">+1</span>）</td>
+                    <td>原研已进口</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><a href="https://app.rwork.crc.com.cn/sheets/shtk9IrarQd01e4eAD9l8G0KB4e?sheet=40kRKQ" target="_blank">注射用恩美曲妥珠单抗</a></td>
+                    <td>正在研发中</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>原研已进口</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <footer class="footer">
+        &copy; 2024 深圳华润九新药业有限公司. All rights reserved.
+    </footer>
+</body>
+
+</html>
